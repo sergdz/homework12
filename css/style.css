@@ -239,13 +239,6 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 30px;
 }
 
-.wrapper .wrapper__body .content__bottom {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-}
-
 .wrapper .wrapper__body .content__link {
   display: block;
   font-size: .875rem;
@@ -274,5 +267,41 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 46px;
   padding-top: .7%;
   margin-left: 8.4%;
+}
+
+.wrapper .wrapper__body .content__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 7%;
+  margin-top: 3%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.wrapper .wrapper__body .content__item {
+  width: 30%;
+  padding-bottom: 2%;
+  padding-left: 3%;
+}
+
+.wrapper .wrapper__body .content__img {
+  padding-bottom: 5%;
+}
+
+.wrapper .wrapper__body .content__subtitle--secondary {
+  color: #24A3FF;
+  font-size: 1.375rem;
+  line-height: 1.6875rem;
+  padding-bottom: 8%;
+  font-weight: bold;
+  cursor: default;
+}
+
+.wrapper .wrapper__body .content__text {
+  line-height: 26px;
 }
 /*# sourceMappingURL=style.css.map */
