@@ -12,14 +12,14 @@
 
     .wrapper__body {
         a {
-            color: $colorW;
+            color: $color1;
         }
 
         background-image: url(../imgs/symbol.svg);
         background-repeat: no-repeat;
         background-position: top;
         background-size: 45%;
-        color: $colorW;
+        color: $color1;
         height: 2266px;
 
 
@@ -82,12 +82,14 @@
                 height: 24px;
                 background-image: url(../icons/Vectorfacebook.svg);
             }
+
             .header__link--facebook:hover {
                 display: block;
                 width: 24px;
                 height: 24px;
                 background-image: url(../icons/Vectorfacebookhov.svg);
             }
+
             .header__icon {
                 padding: 2px;
             }
@@ -98,7 +100,9 @@
 
             .nav__link {
                 font-weight: 700;
+                padding-bottom: 3px;
             }
+
             .nav__link:hover {
                 border-bottom: 2px solid #ffffff;
                 font-weight: 700;
@@ -138,6 +142,56 @@
 
         }
 
+        .content {
+            display: flex;
+            width: 95%;
+            margin: 0 auto;
+            padding-top: 6%;
+            justify-content: center;
+        }
+
+        .column--primary {
+            display: flex;
+            width: 29%;
+            padding-right: 3%;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        
+        .column--secondary {
+            width: 56%;
+            padding-left: 3%;
+            border-left: 4px solid rgba(255, 255, 255, 0.3);
+
+        }
+
+        .column__subtitle {
+            font-size: 2.4375rem;
+            font-weight: 700;
+            line-height: 3rem;
+            padding-bottom: 10%;
+
+        }
+
+        .column__subtitle:hover {
+            color: $color2;
+
+        }
+
+        .column__subtitle--active {
+            @extend %gradient-text
+        }
+
+        .column__subtitle--secondary {
+            font-size: 1.875rem;
+            margin-top: 6%;
+            padding-bottom: 2%;
+        }
+
+        .column__text {
+            font-size: 1.1875rem;
+            line-height: 30px;
+        }
 
 
 

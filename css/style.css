@@ -24,6 +24,13 @@ h1, h2, h3, h4, h5, h6, p {
   vertical-align: baseline;
 }
 
+.wrapper .wrapper__body .column__subtitle--active {
+  background-image: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @font-face {
   font-family: "Montserrat";
   src: url(../fonts/Montserrat.ttf);
@@ -131,6 +138,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .wrapper .wrapper__body .header .nav__link {
   font-weight: 700;
+  padding-bottom: 3px;
 }
 
 .wrapper .wrapper__body .header .nav__link:hover {
@@ -166,5 +174,60 @@ h1, h2, h3, h4, h5, h6, p {
   height: 42px;
   margin-top: 21%;
   margin-left: 49%;
+}
+
+.wrapper .wrapper__body .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 6%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper .wrapper__body .column--primary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 29%;
+  padding-right: 3%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.wrapper .wrapper__body .column--secondary {
+  width: 56%;
+  padding-left: 3%;
+  border-left: 4px solid rgba(255, 255, 255, 0.3);
+}
+
+.wrapper .wrapper__body .column__subtitle {
+  font-size: 2.4375rem;
+  font-weight: 700;
+  line-height: 3rem;
+  padding-bottom: 10%;
+}
+
+.wrapper .wrapper__body .column__subtitle:hover {
+  color: #f0145a;
+}
+
+.wrapper .wrapper__body .column__subtitle--secondary {
+  font-size: 1.875rem;
+  margin-top: 6%;
+  padding-bottom: 2%;
+}
+
+.wrapper .wrapper__body .column__text {
+  font-size: 1.1875rem;
+  line-height: 30px;
 }
 /*# sourceMappingURL=style.css.map */
