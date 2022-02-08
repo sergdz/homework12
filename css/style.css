@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 16px;
 }
@@ -24,8 +25,15 @@ h1, h2, h3, h4, h5, h6, p {
   vertical-align: baseline;
 }
 
-.wrapper .wrapper__body .column__subtitle--active {
+.wrapper .wrapper__body .content .column__subtitle--active {
   background-image: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.wrapper .wrapper__body .content__subtitle {
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -188,7 +196,7 @@ h1, h2, h3, h4, h5, h6, p {
           justify-content: center;
 }
 
-.wrapper .wrapper__body .column--primary {
+.wrapper .wrapper__body .content .column--primary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -203,31 +211,68 @@ h1, h2, h3, h4, h5, h6, p {
           align-items: flex-end;
 }
 
-.wrapper .wrapper__body .column--secondary {
+.wrapper .wrapper__body .content .column--secondary {
   width: 56%;
   padding-left: 3%;
   border-left: 4px solid rgba(255, 255, 255, 0.3);
 }
 
-.wrapper .wrapper__body .column__subtitle {
+.wrapper .wrapper__body .content .column__subtitle {
   font-size: 2.4375rem;
   font-weight: 700;
   line-height: 3rem;
   padding-bottom: 10%;
 }
 
-.wrapper .wrapper__body .column__subtitle:hover {
+.wrapper .wrapper__body .content .column__subtitle:hover {
   color: #f0145a;
 }
 
-.wrapper .wrapper__body .column__subtitle--secondary {
+.wrapper .wrapper__body .content .column__subtitle--secondary {
   font-size: 1.875rem;
   margin-top: 6%;
   padding-bottom: 2%;
 }
 
-.wrapper .wrapper__body .column__text {
+.wrapper .wrapper__body .content .column__text {
   font-size: 1.1875rem;
   line-height: 30px;
+}
+
+.wrapper .wrapper__body .content__bottom {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.wrapper .wrapper__body .content__link {
+  display: block;
+  font-size: .875rem;
+  color: #24A3FF;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 2.3%;
+  margin-left: 8.4%;
+}
+
+.wrapper .wrapper__body .content__link:hover {
+  color: #f0145a;
+}
+
+.wrapper .wrapper__body .content__link p::after {
+  content: "ᐳ";
+  padding: 3px;
+}
+
+.wrapper .wrapper__body .content__subtitle {
+  font-size: 2.375rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 46px;
+  padding-top: .7%;
+  margin-left: 8.4%;
 }
 /*# sourceMappingURL=style.css.map */
