@@ -1,0 +1,76 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 1rem;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat.ttf);
+}
+
+.wrapper a {
+  color: #FFFFFF;
+}
+
+.wrapper .wrapper__body {
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  background-blend-mode: multiply;
+  border-radius: 0px 0px 12px 12px;
+  font-family: "Montserrat";
+  height: 2266px;
+}
+
+.wrapper .header {
+  border: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .header .header__logo {
+  width: 6.77%;
+  margin-left: 8.3%;
+  margin-top: 2.2%;
+}
+
+.wrapper .header .nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper .header .header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .wrapper__img {
+  width: 45.4%;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  left: 27.2%;
+}
+/*# sourceMappingURL=style.css.map */
