@@ -4,46 +4,142 @@
 }
 
 .wrapper {
-    a {
-        color: $colorW;
-    }
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    border-radius: 0px 0px 12px 12px;
+    font-family: "Montserrat";
+    height: 2266px;
+
 
     .wrapper__body {
+        a {
+            color: $colorW;
+        }
 
-        background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
-        background-blend-mode: multiply;
-        border-radius: 0px 0px 12px 12px;
-        font-family: "Montserrat";
+        background-image: url(../imgs/symbol.svg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 45%;
+        color: $colorW;
         height: 2266px;
-    }
 
 
-    .header {
-        border: black;
-        @include space-between;
 
-        .header__logo {
-            width: 6.77%;
-            margin-left: 8.3%;
-            margin-top: 2.2%;
-        }
+        .header {
 
-        .nav__list {
-            display: flex;
-        }
-
-        .header__list {
             @include space-between;
+
+            .header__logo {
+                width: 6.77%;
+                margin-left: 8.3%;
+                margin-top: 2.2%;
+            }
+
+
+            .header__list {
+                @include align-centr;
+                margin-right: 145px;
+                padding-bottom: 15px;
+            }
+
+            .header__item {
+                margin-top: 8%;
+                margin-left: 1px;
+            }
+
+            .header__link--primary {
+                font-size: .75rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                line-height: 14.63px;
+                padding: 9px;
+            }
+
+
+
+            .header__link--primary:hover {
+                background: #F0145A;
+                border-radius: 8px;
+
+
+
+            }
+
+            .header__link--secondary {
+                font-weight: 400;
+                line-height: 19.5px;
+            }
+
+            .header__link--tertiary {
+                font-size: 1rem;
+                font-weight: 700;
+                line-height: 14.63px;
+                padding: 7px;
+            }
+
+            .header__link--facebook {
+                display: block;
+                width: 24px;
+                height: 24px;
+                background-image: url(../icons/Vectorfacebook.svg);
+            }
+            .header__link--facebook:hover {
+                display: block;
+                width: 24px;
+                height: 24px;
+                background-image: url(../icons/Vectorfacebookhov.svg);
+            }
+            .header__icon {
+                padding: 2px;
+            }
+
+            .nav__list {
+                display: flex;
+            }
+
+            .nav__link {
+                font-weight: 700;
+            }
+            .nav__link:hover {
+                border-bottom: 2px solid #ffffff;
+                font-weight: 700;
+            }
+
+            .nav__item {
+                margin-left: 4.6%;
+            }
         }
+
+        .title {
+            font-size: 2.375rem;
+            width: 41.7%;
+            font-weight: 700;
+            margin-top: 19.1%;
+            margin-left: 37.5%;
+
+        }
+
+        .center__btn {
+            background-image: url(../icons/btncenter.svg);
+            display: block;
+            width: 42px;
+            height: 42px;
+            margin-top: 21%;
+            margin-left: 49%;
+
+        }
+
+        .center__btn:hover {
+            background-image: url(../icons/btnhov.svg);
+            display: block;
+            width: 42px;
+            height: 42px;
+            margin-top: 21%;
+            margin-left: 49%;
+
+        }
+
+
+
+
     }
-
-    .wrapper__img {
-        width: 45.4%;
-        opacity: 0.9;
-        position: absolute;
-        top: 0;
-        left: 27.2%;
-    }
-
-
 }
