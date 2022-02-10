@@ -29,7 +29,7 @@
             @include space-between;
 
             .header__logo {
-                width: 6.77%;
+                width: 6.78%;
                 margin-left: 8.3%;
                 margin-top: 2.2%;
             }
@@ -259,5 +259,136 @@
 
 
 
+    }
+
+    .central__block {
+        display: flex;
+        justify-content: center;
+
+        .slider {
+            display: flex;
+            overflow: hidden;
+            position: relative;
+            height: 455px;
+
+            width: 83%;
+            margin-top: 3.5%;
+        }
+
+        .slider__items {
+            display: flex;
+            position: absolute;
+            background: $color4;
+            margin: 1%;
+            justify-content: flex-start;
+        }
+
+        .slider__items--primary {
+            opacity: 1;
+        }
+
+        .slider__item {
+            display: flex;
+            width: 69%;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding-top: 1%;
+        }
+
+        .slider__link {
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: $color3;
+        }
+
+        .slider__link h3::after {
+            content: "ᐳ";
+            padding: 2px;
+        }
+
+        .slider__text {
+            @extend %gradient-text2;
+            font-weight: bold;
+            font-size: 2.375rem;
+            line-height: 46px;
+            padding-bottom: 4%;
+        }
+
+        .slider__subtitle {
+            color: $color5;
+            font-weight: bold;
+
+        }
+
+        .slider__subtitle--secondary {
+            color: $color5;
+            font-size: .875rem;
+            line-height: 22px;
+        }
+
+        .slider__img {
+            margin-right: 2%;
+            width: 24%;
+        }
+
+        .slider__btn {
+            position: absolute;
+            left: 47%;
+            top: 66%;
+        }
+
+        .slider__btn button {
+            text-align: center;
+            margin: 30px 5px 0;
+            width: 16px;
+            height: 15px;
+            border: none;
+            outline: none;
+            border-radius: 51%;
+            transition: all .3s;
+        }
+
+        .slider__btn button:hover {
+            background-color: $color3;
+        }
+
+        .slider__btn--primary {
+            background-image: url(../icons/Ellipse.svg);
+        }
+
+        .slider__btn--secondary {
+            background-image: url(../icons/Ellipse.svg);
+        }
+
+        .slider__btn--tertiary {
+            background-image: url(../icons/Ellipse.svg);
+
+        }
+    }
+
+    .bottom__block {
+        .bottom__subtitle {
+            font-size: .875rem;
+            line-height: 17px;
+            @extend %text-transform;
+            width: 12%;
+            margin: 0 auto;
+        }
+
+        .bottom__item {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 1%;
+        }
+        .bottom__link {
+            display: block;
+        }
+        .bottom__img {
+            height: 100%;
+        }
     }
 }
