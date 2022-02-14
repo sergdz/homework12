@@ -57,11 +57,10 @@
     }
 
     @media screen and (max-width: 840px) {
+        
 
         .wrapper .wrapper__body .content {
 
-            display: flex;
-            width: 95%;
             margin: 0 auto;
             padding-top: 6%;
             flex-direction: column;
