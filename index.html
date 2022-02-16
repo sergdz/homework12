@@ -17,8 +17,10 @@
 
     <div class="container">
         <div class="wrapper">
+          
             <div class="wrapper__body">
                 <header class="header">
+
                     <img class="header__logo" src="imgs/logo.svg" alt="логотип">
 
 
@@ -53,6 +55,9 @@
                                 </li>
                             </ul>
                         </div>
+
+                        
+
                         <ul class="nav__list">
                             <li class="nav__item">
                                 <a href="#" class="nav__link">about us</a>
@@ -70,6 +75,47 @@
                                 <a href="#" class="nav__link">contact</a>
                             </li>
                         </ul>
+
+                        <div id="header__burger" >
+                            <img src="/icons/Hamburger.svg" alt="burger">
+                        </div>
+            
+            
+                        <div id="myModal" class="modal">
+            
+            
+                            <div class="modal-content">
+                              
+                                <div class="modal-body">
+                                        <span class="close">&times;</span>
+                                        <div class="modal__item">
+                                            <a href="">
+                                            about us
+                                        </a>
+                                        </div>
+                                        <div class="modal__item">
+                                            <a href="">
+                                            послуги
+                                        </a>
+                                        </div>
+                                        <div class="modal__item">
+                                            <a href="">
+                                            команда
+                                        </a>
+                                        </div>
+                                        <div class="modal__item">
+                                            <a href="">
+                                            публікації
+                                        </a>
+                                        </div>
+                                        <div class="modal__item">
+                                            <a href="">
+                                            контакти
+                                        </a>
+                                        </div>
+                                    </div>
+            
+                        </div>
 
                     </div>
                 </header>
@@ -281,13 +327,13 @@
                         </h5>
                     </div>
                 </div>
-                
-                
+
+
 
             </div>
 
-           
-          
+
+
 
         </div>
         <div class="bottom__block">
@@ -435,7 +481,7 @@
 
 
     </div>
-    <script src="main.js"></script>
+    <script src="/js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
     </script>
@@ -443,8 +489,8 @@
     <script>
         $(document).ready(function () {
             $(".owl-carousel").owlCarousel({
-                items:1,
-                margin:50,
+                items: 1,
+                margin: 50,
                 dotsEach: true,
                 loop: true,
             });

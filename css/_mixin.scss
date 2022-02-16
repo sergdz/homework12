@@ -21,8 +21,15 @@
 
 
     @media screen and (max-width: 1900px) {
-        .wrapper .wrapper__body .content .column--primary {
-            width: 30%;
+        .wrapper {
+            .wrapper__body {
+
+                .content {
+                    .column--primary {
+                        width: 30%;
+                    }
+                }
+            }
         }
     }
 
@@ -30,70 +37,128 @@
 
 
 
-        .wrapper .wrapper__body .content .column--primary {
-            width: 34%;
+        .wrapper {
+            .wrapper__body {
+                .content {
+                    .column--primary {
+                        width: 34%;
+                    }
+                }
+            }
+
         }
-
-
     }
 
     @media screen and (max-width: 1280px) {
-        .wrapper .wrapper__body .content .column--primary {
-            width: 45%;
+        .wrapper {
+            .wrapper__body {
+                .content {
+                    .column--primary {
+                        width: 45%;
+                    }
+                }
+            }
         }
     }
 
     @media screen and (max-width: 1024px) {
 
-        .wrapper .wrapper__body .content .column--primary {
-            width: 49%;
+        .wrapper {
+            .wrapper__body {
+                .content {
+                    .column--primary {
+                        width: 49%;
+                    }
+                }
+            }
         }
     }
 
     @media screen and (max-width: 960px) {
-        .wrapper .wrapper__body .content .column--primary {
-            width: 70%;
+        .wrapper {
+            .wrapper__body {
+                .content {
+                    .column--primary {
+                        width: 70%;
+                    }
+                }
+            }
         }
     }
+
 
     @media screen and (max-width: 840px) {
-        
 
-        .wrapper .wrapper__body .content {
 
-            margin: 0 auto;
-            padding-top: 6%;
-            flex-direction: column;
-            align-items: flex-start;
+        .wrapper {
+            .wrapper__body {
+                .content {
+
+                    margin: 0 auto;
+                    padding-top: 6%;
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    .column--primary {
+                        display: flex;
+                        width: 204%;
+                        flex-direction: row;
+                        align-items: center;
+
+                    }
+
+                    .column--secondary {
+                        width: 90%;
+                        display: flex;
+                        padding-bottom: 4%;
+                        border-top: 4px solid rgba(255, 255, 255, 0.3);
+                        border-left: none;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+
+                    .column__subtitle {
+                        width: 100%;
+                    }
+                }
+
+
+
+
+
+            }
         }
-
-        .wrapper .wrapper__body .content .column--primary {
-            display: flex;
-            width: 204%;
-            flex-direction: row;
-            align-items: center;
-
-        }
-
-        .wrapper .wrapper__body .content .column--secondary {
-            width: 90%;
-            display: flex;
-            padding-bottom: 4%;
-            border-top: 4px solid rgba(255, 255, 255, 0.3);
-            border-left: none;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .wrapper .wrapper__body .content .column__subtitle {
-            width: 100%;
-        }        
-
-        @media screen and (max-width: 600px) {}
-
-        @media screen and (max-width: 480px) {}
-
-        @media screen and (max-width: 360px) {}
-
     }
+
+    @media screen and (max-width: 767px) {}
+
+    @media screen and (max-width: 600px) {}
+
+    @media screen and (max-width: 480px) {
+        .wrapper {
+            .header {
+
+
+                .nav {
+                    .nav__list {
+                        display: none;
+                    }
+
+                    #header__burger {
+                        display: block;
+                        position: relative;
+                        left: 84%;
+                        bottom: 28%;
+                    }
+                }
+                .header__link--facebook,
+                .header__link--secondary,
+                .header__icon {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 360px) {}
 }

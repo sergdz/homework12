@@ -9,6 +9,9 @@ body {
 
 
 .wrapper {
+
+
+
     a {
         color: $color1;
     }
@@ -23,10 +26,15 @@ body {
 
         @include space-between;
 
+
+
+
+
         .header__logo {
             width: 6.78%;
             margin-left: 8.3%;
             margin-top: 2.2%;
+            z-index: 5;
         }
 
 
@@ -91,22 +99,136 @@ body {
             padding: 2px;
         }
 
-        .nav__list {
-            display: flex;
-        }
+        .nav {
 
-        .nav__link {
-            font-weight: 700;
-            padding-bottom: 3px;
-        }
+            #header__burger {
+                display: none;
+                width: 32px;
+                height: 32px;
+            }
 
-        .nav__link:hover {
-            border-bottom: 2px solid #ffffff;
-            font-weight: 700;
-        }
 
-        .nav__item {
-            margin-left: 4.6%;
+            .modal {
+                display: none;
+                /* Hidden by default */
+                position: fixed;
+                /* Stay in place */
+                z-index: 1;
+                /* Sit on top */
+                padding-top: 100px;
+                /* Location of the box */
+                left: -120px;
+                top: 0;
+                width: 75%;
+                /* Full width */
+                height: 100%;
+                /* Full height */
+                overflow: auto;
+                /* Enable scroll if needed */
+                background-color: rgb(0, 0, 0);
+                /* Fallback color */
+                background-color: rgba(0, 0, 0, 0.4);
+                /* Black w/ opacity */
+            }
+
+
+            .modal-content {
+                background-color: #ffffff;
+                margin: auto;
+                padding: 0;
+                width: 50%;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                -webkit-animation-name: animatetop;
+                -webkit-animation-duration: 0.4s;
+                animation-name: animatetop;
+                animation-duration: 1s;
+
+
+            }
+
+
+            @-webkit-keyframes animatetop {
+                from {
+                    top: -300px;
+                    opacity: 0
+                }
+
+                to {
+                    top: 0;
+                    opacity: 1
+                }
+            }
+
+            @keyframes animatetop {
+                from {
+
+                    opacity: 0
+                }
+
+                to {
+
+                    opacity: 1
+                }
+            }
+
+            .modal__item {
+                font-size: 1.5rem;
+                line-height: 1.8125rem;
+                text-align: center;
+                font-weight: bold;
+                border-radius: 12px;
+                margin: 3%;
+                padding: 2%;
+                background-color: $color4;
+
+                & a {
+                    color: $color3;
+                }
+
+            }
+
+
+            .close {
+                position: relative;
+                left: 90%;
+                color: #EC6F5D;
+                font-size: 64px;
+                transition: 1s all;
+            }
+
+            .close:hover,
+            .close:focus {
+                color: rgb(15, 14, 14);
+                cursor: pointer;
+
+
+            }
+
+
+
+            .modal-body {
+                padding: 2px 16px;
+            }
+
+
+            .nav__list {
+                display: flex;
+            }
+
+            .nav__link {
+                font-weight: 700;
+                padding-bottom: 3px;
+            }
+
+            .nav__link:hover {
+                border-bottom: 2px solid #ffffff;
+                font-weight: 700;
+            }
+
+            .nav__item {
+                margin-left: 4.6%;
+            }
+
         }
     }
 
@@ -269,7 +391,7 @@ body {
     }
 
 
-  
+
 }
 
 .central__block {
@@ -289,11 +411,12 @@ body {
         @extend %text-transform;
         color: $color3;
     }
-    
+
     .central__subtitle {
         color: $color5;
         font-weight: bold;
     }
+
     .central__subtitle--secondary {
         font-size: .875rem;
         color: $color5;
@@ -314,9 +437,9 @@ body {
     }
 
     .owl-dot.active {
-      
+
         opacity: 1;
-        
+
     }
 
     .owl-dots {
