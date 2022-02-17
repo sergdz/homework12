@@ -136,29 +136,76 @@
 
     @media screen and (max-width: 480px) {
         .wrapper {
-            .header {
+
+            .wrapper__body {
+                background-size: 97%;
 
 
-                .nav {
-                    .nav__list {
+                .header {
+
+
+                    .nav {
+                        .nav__list {
+                            display: none;
+                        }
+
+                        #header__burger {
+                            display: block;
+                            position: relative;
+                            left: 84%;
+                        }
+                    }
+
+                    .header__link--facebook,
+                    .header__link--secondary,
+                    .header__icon {
                         display: none;
                     }
 
-                    #header__burger {
-                        display: block;
-                        position: relative;
-                        left: 84%;
-                        bottom: 28%;
+                    .header__list {
+                        margin: 0;
+                    }
+
+                    .header__logo {
+                        width: 40%;
+                    }
+
+                }
+
+                .content__bottom {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-top: 8%;
+
+                }
+
+                .content__item {
+                    width: 80%;
+                    padding-bottom: 10%;
+                }
+
+                .owl-carousel {
+                    .central__block {
+
+                        .central__items {
+                            display: flex;
+                            align-items: flex-end;
+                            flex-direction: column;
+                        }
                     }
                 }
-                .header__link--facebook,
-                .header__link--secondary,
-                .header__icon {
-                    display: none;
-                }
             }
-        }
-    }
 
-    @media screen and (max-width: 360px) {}
+                .section {
+                    .section__column {
+                        display: flex;
+                        flex-direction: column;
+                        width: max-content;
+                    }
+                }
+        }
+
+        @media screen and (max-width: 360px) {}
+    }
 }
