@@ -148,43 +148,45 @@
 
     @media screen and (max-width: 480px) {
         .wrapper {
+            .wrapper__body {
+                .header {
 
-            .header {
-
-                 .header__link {
-                    font-size: .5rem;
-                }
-
-                
+                    .header__link {
+                        font-size: .5rem;
+                    }
 
 
-                .nav {
-                    .nav__list {
+
+
+                    .nav {
+                        .nav__list {
+                            display: none;
+                        }
+
+                        #header__burger {
+                            display: block;
+                            position: relative;
+                            left: 84%;
+                        }
+                    }
+
+                    .header__link--facebook,
+                    .header__link--secondary,
+                    .header__icon {
                         display: none;
                     }
 
-                    #header__burger {
-                        display: block;
-                        position: relative;
-                        left: 84%;
+                    .header__list {
+                        margin-left: 60px;
                     }
-                }
 
-                .header__link--facebook,
-                .header__link--secondary,
-                .header__icon {
-                    display: none;
-                }
+                    .header__logo {
+                        width: 40%;
+                    }
 
-                .header__list {
-                    margin-left: 60px;
                 }
-
-                .header__logo {
-                    width: 40%;
-                }
-
             }
+
             .wrapper__body {
                 background-size: 97%;
 

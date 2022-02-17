@@ -729,26 +729,26 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-  .wrapper .header .header__link {
+  .wrapper .wrapper__body .header .header__link {
     font-size: .5rem;
   }
-  .wrapper .header .nav .nav__list {
+  .wrapper .wrapper__body .header .nav .nav__list {
     display: none;
   }
-  .wrapper .header .nav #header__burger {
+  .wrapper .wrapper__body .header .nav #header__burger {
     display: block;
     position: relative;
     left: 84%;
   }
-  .wrapper .header .header__link--facebook,
-  .wrapper .header .header__link--secondary,
-  .wrapper .header .header__icon {
+  .wrapper .wrapper__body .header .header__link--facebook,
+  .wrapper .wrapper__body .header .header__link--secondary,
+  .wrapper .wrapper__body .header .header__icon {
     display: none;
   }
-  .wrapper .header .header__list {
+  .wrapper .wrapper__body .header .header__list {
     margin-left: 60px;
   }
-  .wrapper .header .header__logo {
+  .wrapper .wrapper__body .header .header__logo {
     width: 40%;
   }
   .wrapper .wrapper__body {
