@@ -1,0 +1,31 @@
+%gradient-text {
+    background-image: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+%gradient-text2 {
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+%text-transform {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+
+}
+
+%text-transform1 {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
