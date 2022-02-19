@@ -158,6 +158,7 @@
 
 
 
+
                     .nav {
                         .nav__list {
                             display: none;
@@ -266,5 +267,17 @@
         }
     }
 }
+
+@media screen and (max-width: 360px) {}
+
+
+.section {
+    .section__column {
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+    }
+}
+
 
 @media screen and (max-width: 360px) {}

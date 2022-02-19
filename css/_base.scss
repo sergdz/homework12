@@ -10,11 +10,7 @@ body {
 
 .wrapper {
 
-
-    
-
-
-    a {
+ a {
         color: $color1;
     }
 
@@ -42,7 +38,8 @@ body {
 
         .header__list {
             @include align-centr;
-            margin-right:4;
+
+            margin-right: 145px;
             padding-bottom: 15px;
         }
 
@@ -121,6 +118,7 @@ body {
                 height: 100%;
                 background-color: rgb(0, 0, 0);
                 background-color: rgba(0, 0, 0, 0.4);
+
             }
 
 
@@ -179,9 +177,10 @@ body {
 
             }
 
-            .modal__item  a:hover {
+            .modal__item a:hover {
                 color: $color2;
             }
+
 
 
             .close {
@@ -387,7 +386,9 @@ body {
     }
 
 
-}
+
+
+
 
 .central__block {
 
@@ -602,6 +603,7 @@ body {
 
 
 
+
 /****************************************SERVICES*****************************************************/
 .service__logo {
     display: flex;
@@ -620,7 +622,6 @@ body {
 
 .logo__subtitle {
     font-size: 2.25rem;
-    
 }
 
 .center__block {
@@ -631,5 +632,4 @@ body {
 .center__img {
     margin-top: 4%;
 }
-
-@include size;
+}
