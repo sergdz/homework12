@@ -36,17 +36,12 @@ body {
   font-family: "Montserrat";
 }
 
-.container {
-  /*  */
-}
-
 .container .wrapper {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   border-radius: 0px 0px 12px 12px;
   font-family: "Montserrat";
   color: #FFFFFF;
   /****************************************SERVICES*****************************************************/
-  /*  */
 }
 
 .container .wrapper a {
@@ -446,6 +441,9 @@ body {
 }
 
 @media screen and (max-width: 840px) {
+  .container .wrapper .wrapper .wrapper__body .header .header__list {
+    margin-right: 15px;
+  }
   .container .wrapper .wrapper .wrapper__body .content {
     margin: 0 auto;
     padding-top: 6%;
@@ -610,13 +608,14 @@ body {
 }
 
 @media screen and (max-width: 375px) {
-  .container .wrapper {
-    /*  */
+  .container .wrapper .wrapper .wrapper__body .header .header__list {
+    margin: 0;
   }
-  .container .wrapper .container .wrapper .wrapper__body .header .header__logo {
+  .container .wrapper .wrapper .wrapper__body .header .header__logo {
     width: 100%;
+    margin-left: 20%;
   }
-  .container .wrapper .container .wrapper .wrapper__body .section .section__column {
+  .container .wrapper .wrapper .wrapper__body .section .section__column {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -902,6 +901,9 @@ body {
 }
 
 @media screen and (max-width: 840px) {
+  .container .wrapper .wrapper__body .header .header__list {
+    margin-right: 15px;
+  }
   .container .wrapper .wrapper__body .content {
     margin: 0 auto;
     padding-top: 6%;
@@ -1066,13 +1068,14 @@ body {
 }
 
 @media screen and (max-width: 375px) {
-  .container {
-    /*  */
+  .container .wrapper .wrapper__body .header .header__list {
+    margin: 0;
   }
-  .container .container .wrapper .wrapper__body .header .header__logo {
+  .container .wrapper .wrapper__body .header .header__logo {
     width: 100%;
+    margin-left: 20%;
   }
-  .container .container .wrapper .wrapper__body .section .section__column {
+  .container .wrapper .wrapper__body .section .section__column {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
