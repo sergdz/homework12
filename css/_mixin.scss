@@ -259,7 +259,7 @@
             }
         }
     }
-    }
+
 
     /*  */
 
@@ -277,20 +277,29 @@
         }
     }
 
-    @media screen and (max-width: 480px) {
-        
-}
+    @media screen and (max-width: 480px) {}
 
-@media screen and (max-width: 375px)
+    @media screen and (max-width: 375px) {
 
-/*  */
-    {
+        /*  */
+        .container {
+            .wrapper {
+                .wrapper__body {
+                    .header {
+                        .header__logo {
+                            width: 100%;
+                        }
+                    }
 
-    .section {
-        .section__column {
-            display: flex;
-            flex-direction: column;
-            width: max-content;
+                    .section {
+                        .section__column {
+                            display: flex;
+                            flex-direction: column;
+                            width: max-content;
+                        }
+                    }
+                }
+            }
         }
     }
 }
