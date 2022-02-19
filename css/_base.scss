@@ -28,15 +28,17 @@ body {
 
 
 
-
-
-            .header__logo {
-                width: 6.78%;
-                margin-left: 8.3%;
-                margin-top: 2.2%;
-                z-index: 5;
+            .logo__link {
+               display: flex;
+               align-items: flex-end;
             }
 
+            .header__logo {
+                width: 100%;
+                margin-left: 76%;
+                padding-top: 26.2%;
+                z-index: 5;
+            }
 
             .header__list {
                 @include align-centr;
@@ -400,12 +402,13 @@ body {
         /****************************************SERVICES*****************************************************/
         .service__logo {
             display: flex;
-            position: relative;
             right: 21%;
             margin-left: 1%;
             padding-top: 2%;
             align-items: center;
         }
+
+        @include size();
 
         .logo__title {
             font-size: 3rem;
@@ -638,4 +641,5 @@ body {
         }
     }
 
+    @include size();
 }
